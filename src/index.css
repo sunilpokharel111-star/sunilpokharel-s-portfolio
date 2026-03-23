@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hero gradient animation */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animated-bg {
+  background: linear-gradient(270deg, #ff6b6b, #f8e71c, #6bffb3);
+  background-size: 600% 600%;
+  animation: gradientFlow 20s ease infinite;
+}
+
+/* Introduction overlay */
+.overlay-bg {
+  background: url('banepa.png') center/cover no-repeat;
+  position: relative;
+}
+.overlay-bg::after {
+  content: '';
+  position: absolute;
+  top:0; left:0; width:100%; height:100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Ensure touch targets are at least 48px */
+  button, a, input, textarea {
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  /* Improve input focus on mobile */
+  input:focus, textarea:focus {
+    background-color: rgba(107, 114, 128, 1);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(248, 231, 28, 0.6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(248, 231, 28, 0.8);
+}
