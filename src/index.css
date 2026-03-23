@@ -16,7 +16,7 @@
 
 /* Introduction overlay */
 .overlay-bg {
-  background: url('banepa.png') center/cover no-repeat;
+  background: url('/banepa.png') center/cover no-repeat;
   position: relative;
 }
 .overlay-bg::after {
