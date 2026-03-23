@@ -140,7 +140,7 @@ export default function ContactProof() {
             <div className="p-4 text-white">
               <h3 className="font-semibold text-base sm:text-lg">Project One(Black Ink Ateller)</h3>
               <a
-                href="https://github.com/sunilpokharel111-star/auto_inventory_system"
+                href="https://github.com/sunilpokharel111-star/black-ink-atelier"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent underline text-sm"
@@ -159,7 +159,7 @@ export default function ContactProof() {
             <div className="p-4 text-white">
               <h3 className="font-semibold text-base sm:text-lg">Project Two(sunilpokhareldev)</h3>
               <a
-                href="https://github.com/sunilpokharel111-star/black-ink-atelier"
+                href="https://github.com/sunilpokharel111-star/sunilpokharel-s-portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent underline text-sm"
